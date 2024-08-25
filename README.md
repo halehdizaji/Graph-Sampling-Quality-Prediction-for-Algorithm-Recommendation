@@ -17,6 +17,25 @@ This tutorial includes instructions for graph data preparation, processing, samp
 
 ## Data generation
 
+### Synthetic graphs - train
+
+Albert-Barabasi, Watts-Strogatz and ErdosRenyi:
+	We calculate parameters of these graphs given the desired densities in Table 1.
+Albert-Barabasi parameter calculation:
+	
+
+Watts-Strogatz parameter calculation:
+watts_neighbour_num = round(graph_density * (node_nums - 1))
+
+#Nodes: 10,000 ~ 100,000
+Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
+#Graphs: 546
+Library: Networkx
+
+### Synthetic graphs - test
+
+### Real graphs
+
 ## Graph feature extraction
 ## Graph sampling and evaluation
 ## Mutual information analysis
