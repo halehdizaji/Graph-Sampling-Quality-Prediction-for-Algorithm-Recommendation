@@ -35,6 +35,13 @@ Library: Networkx
 PowerLawCluster:
 We adjusted generation parameters (new edge numbers per node m, TriangleProb) to produce densities in  [0.00001, 0.001] and average clustering coefficient (CC) in [0.1, 0.6] extracted from real graph properties.
 
+#Nodes | m | TriangleProb 
+--- | --- | --- 
+10,000 | 2 | 0.2, 0.3, 0.4, 0.5, 0.6
+10,000 | 3 | 0.2, 0.4, 0.6, 0.8, 0.9, 1
+10,000 | 5 | 0.4, 0.6, 0.8, 1
+
+ 
 
 ### Synthetic graphs - test
 
