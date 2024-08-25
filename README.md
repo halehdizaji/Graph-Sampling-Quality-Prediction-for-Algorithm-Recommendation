@@ -19,7 +19,7 @@ This tutorial includes instructions for graph data preparation, processing, samp
 
 ### Synthetic graphs - train
 
-Albert-Barabasi, Watts-Strogatz and ErdosRenyi:
+**Albert-Barabasi, Watts-Strogatz and ErdosRenyi**
 	We calculate parameters of these graphs given the desired densities in Table 1.
 Albert-Barabasi parameter calculation:
 	
@@ -32,7 +32,7 @@ Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.
 #Graphs: 546
 Library: Networkx
 
-PowerLawCluster:
+**PowerLawCluster**
 We adjusted generation parameters (new edge numbers per node m, TriangleProb) to produce densities in  [0.00001, 0.001] and average clustering coefficient (CC) in [0.1, 0.6] extracted from real graph properties.
 
 #Nodes | m | TriangleProb 
