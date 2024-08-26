@@ -2,10 +2,10 @@
 
 dataset_num=1
 ################ Synthetic data folder #######
-#root_folder=/home/itec/haleh/PycharmProjects/Graph_Sampling/data/syn_graphs
+#root_folder=./Graph_Sampling/data/syn_graphs
 
 ################## Real data folder 
-root_folder=/home/itec/haleh/PycharmProjects/Graph_Sampling/data/real_graphs
+root_folder=./Graph_Sampling/data/real_graphs
 
 dataset_folder=$root_folder/set_$dataset_num/graphs/
 
