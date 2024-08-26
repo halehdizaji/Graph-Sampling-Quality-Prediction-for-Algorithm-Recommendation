@@ -6,8 +6,8 @@ import os
 import sys
 sys.path.append('../')
 from Graph_Processing.Graph_Processing import graph_feature_extractor
-from Data_Preprocessing.Read_Graph_from_Text import read_graph_from_text, read_graph_from_csv_ids, read_graph_from_orig_csv_ids, read_graph_from_text_pd_no_self_loop
-from Text_Processing.Read_Config import read_config_file_synthetic_data
+from text_preprocessing.Read_Graph_from_Text import read_graph_from_text, read_graph_from_csv_ids, read_graph_from_orig_csv_ids, read_graph_from_text_pd_no_self_loop
+from text_processing.Read_Config import read_config_file_synthetic_data
 
 dataset_num = 2
 data_folder = '/home/haleh/PycharmProjects/Graph_Sampling_Alg_Selection/venv/data/graphs_data/real_graphs/dataset_' + str(dataset_num) + '/'
