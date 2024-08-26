@@ -16,7 +16,7 @@ from Text_Processing.Read_Config import read_config_file_synthetic_data
 current_datetime = datetime.datetime.now()
 current_datetime_str = str(current_datetime.year) + str(current_datetime.month) + str(current_datetime.day) + str(current_datetime.hour)
 dataset_num = 2 
-data_folder = '/home/itec/haleh/PycharmProjects/Graph_Sampling_Alg_Selection_Small_Scale/venv/data/graphs_data/real_graphs/dataset_' + str(dataset_num) + '/'
+data_folder = './Graph_Sampling_Alg_Selection_Small_Scale/venv/data/graphs_data/real_graphs/dataset_' + str(dataset_num) + '/'
 graphs_folder = data_folder + 'graphs/'
 txt_files_floder = data_folder + 'txt_files/'
 
