@@ -10,7 +10,7 @@ from text_preprocessing.Read_Graph_from_Text import read_graph_from_text, read_g
 from text_processing.Read_Config import read_config_file_synthetic_data
 
 dataset_num = 2
-data_folder = '/home/haleh/PycharmProjects/Graph_Sampling_Alg_Selection/venv/data/graphs_data/real_graphs/dataset_' + str(dataset_num) + '/'
+data_folder = './Graph_Sampling_Alg_Selection/venv/data/graphs_data/real_graphs/dataset_' + str(dataset_num) + '/'
 graphs_folder = data_folder + 'graphs/'
 txt_files_floder = data_folder + 'txt_files/'
 #graph_file_name = 'Cit-HepTh.csv'
