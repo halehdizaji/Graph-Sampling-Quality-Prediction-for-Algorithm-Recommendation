@@ -90,7 +90,7 @@ consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward 
 45,000 | 0.01, 0.1, 0.2, 0.3
 50,000 | 0.01, 0.2, 0.3
 
-
+**Stochastic Block Model**
  
 
 ### Synthetic graphs - test
@@ -98,6 +98,8 @@ consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward 
 ### Real graphs
 
 ## Graph feature extraction
+
+
 ## Graph sampling and evaluation
 ## Mutual information analysis
 ## Feature selection and preparation
