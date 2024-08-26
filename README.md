@@ -72,10 +72,23 @@ We adjusted generation parameters (new edge numbers per node m, TriangleProb) to
 40,000 | 5 | 0.3, 0.5, 0.7, 1
 40,000 | 10 | 0.7, 1
 40,000 | 20 | 0.9, 1
-45,000 | 2 |
-45,000 | 10 |
-45,000 | 20 |
+45,000 | 2 | 0.2, 0.6, 0.8
+45,000 | 10 | 0.9, 1
+45,000 | 20 | 1
 
+**Forest-Fire**
+Consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward probabilites to produce densities in [0.00004, 0.001]. 
+#Nodes | forward/backward probability 
+--- | ---  
+10,000 | 0.1, 0.2, 0.3
+15,000 | 0.1, 0.2, 0.3
+20,000 | 0.1, 0.2, 0.3
+25,000 | 0.01, 0.1, 0.2, 0.3
+30,000 | 0.01, 0.1, 0.2, 0.3
+35,000 | 0.01, 0.1, 0.2, 0.3
+40,000 | 0.01, 0.1, 0.2, 0.3
+45,000 | 0.01, 0.1, 0.2, 0.3
+50,000 | 0.01, 0.2, 0.3
 
 
  
