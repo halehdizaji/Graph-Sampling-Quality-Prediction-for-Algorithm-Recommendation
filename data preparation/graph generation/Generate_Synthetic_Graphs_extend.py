@@ -31,7 +31,7 @@ args = parser.parse_args()
 # Parse arguments
 dataset_num = args.dataset_num
 
-data_folder = '/home/itec/haleh/PycharmProjects/Graph_Sampling_Alg_Selection_Small_Scale/venv/data/graphs_data/generated_graphs/dataset_' + str(dataset_num) + '/'
+data_folder = './Graph_Sampling_Alg_Selection_Small_Scale/venv/data/graphs_data/generated_graphs/dataset_' + str(dataset_num) + '/'
 config_file_path = data_folder + 'dataset_info'
 synthetic_train_graphs, train_generated_graph_types, train_input_num_per_type_size, \
     train_graphs_sizes, train_graphs_sizes_ranges, train_generated_graphs_densities, train_stochastic_block_model_cluster_nums, train_stochastic_block_model_probs_ratios, train_powerlaw_cluster_params, train_forest_fire_probs = read_config_file_synthetic_data_v4(config_file_path, 'train')
