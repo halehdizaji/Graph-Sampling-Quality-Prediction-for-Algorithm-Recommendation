@@ -14,7 +14,7 @@ import sys
 sys.path.append('../')
 from Graph_Processing.Graph_Processing_fast_v3 import graph_feature_extractor
 from Graph_Processing.Graph_Functions import approximate_albert_barabasi_param
-from Data_Preprocessing.Read_Graph_from_Text import read_graph_from_text
+from Text_Preprocessing.Read_Graph_from_Text import read_graph_from_text
 from Text_Processing.Read_Config import read_config_file_synthetic_data_v4
 
 current_datetime = datetime.datetime.now()
