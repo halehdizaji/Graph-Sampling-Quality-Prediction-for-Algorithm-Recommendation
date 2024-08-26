@@ -556,7 +556,7 @@ if __name__ == "__main__":
     print('hop plot lcc ', calc_hop_plot_CC_dist(LCC_snap))
     '''
     
-    root_folder = '/home/itec/haleh/PycharmProjects/Graph_Sampling_Alg_Selection_Small_Scale/venv/data/graphs_data/real_graphs/dataset_2/extracted_features/feature_set_1/temp/'
+    root_folder = './Graph_Sampling_Alg_Selection_Small_Scale/venv/data/graphs_data/real_graphs/dataset_2/extracted_features/feature_set_1/temp/'
     '''
     input_graph_ids_pkl = ['ID_test_Real_Gowalla.csv.pickle']
     for graph_id in input_graph_ids_pkl:
