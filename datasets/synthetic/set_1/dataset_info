@@ -1,0 +1,137 @@
+############################################################################## Train Data Info ##########################################################
+
+[generate_train]
+synthetic_train_graphs = True
+
+[train_graph_types]
+albert_barabasi = True
+watts_strogatz = True
+erdos_renyi = True
+powerlaw_cluster = False 
+newman_watts_strogatz = False 
+stochastic_block_model = False 
+forest_fire = False 
+
+[train_input_num_per_ts]
+train_input_num_per_type_size = 1
+
+[train_graphs_sizes]
+graphs_range_size1= True
+graphs_range_size2= True
+graphs_range_size3= True
+graphs_range_size4= True
+graphs_range_size5= False
+graphs_range_size6= False
+graphs_range_size7= False
+graphs_range_size8= False
+graphs_range_size9= False
+graphs_range_size10= False
+graphs_range_size11= False
+
+[train_graphs_sizes_ranges]
+graphs_range_size1 = [30000, 30000]
+graphs_range_size2 = [50000, 50000]
+graphs_range_size3 = [70000, 70000]
+graphs_range_size4 = [100000, 100000]
+graphs_range_size5 = [3000, 3000]
+graphs_range_size6 = [5000, 5000]
+graphs_range_size7 = [1200, 1400] 
+graphs_range_size8 = [1400, 1600] 
+graphs_range_size9 = [1600, 1800] 
+graphs_range_size10 = [2000, 2000] 
+graphs_range_size11 = [5000, 5000]
+
+[train_syn_densities]
+graph_densities = [0.001, 0.0001, 0.0005]
+
+[train_stochastic_block_model_cluster_sizes]
+clusters_set_1 = [0.3, 0.3, 0.4]
+clusters_set_2 = [0.2, 0.2, 0.3, 0.3]
+clusters_set_3 = [0.2, 0.2, 0.2, 0.2, 0.2]
+clusters_set_4 = [0.3, 0.3, 0.4]
+clusters_set_5 = [0.2, 0.3, 0.3, 0.2]
+clusters_set_6 = [0.1, 0.2, 0.2, 0.2, 0.1, 0.2]
+
+[train_stochastic_block_model_probs]
+clusters_set_1 = [[0.5, 0.1, 0.01], [0.1, 0.2, 0.03], [0.01, 0.03, 0.3]]
+clusters_set_2 = [[0.3, 0.1, 0.01, 0.02], [0.1, 0.2, 0.001, 0.002], [0.01, 0.001, 0.25, 0.1], [0.02, 0.002, 0.1, 0.02]]
+clusters_set_3 = [[0.3, 0.1, 0.01, 0.02, 0.05], [0.1, 0.2, 0.001, 0.002, 0.004], [0.01, 0.001, 0.25, 0.1, 0.002], [0.02, 0.002, 0.1, 0.4, 0.05], [0.05, 0.004, 0.002, 0.05, 0.5]]
+clusters_set_4 = [[0.7, 0.01, 0.05], [0.01, 0.6, 0.03], [0.05, 0.03, 0.4]]
+clusters_set_5 = [[0.4, 0.2, 0.01, 0.03], [0.2, 0.25, 0.05, 0.1], [0.01, 0.05, 0.5, 0.04], [0.03, 0.1, 0.04, 0.7]]
+clusters_set_6 = [[0.3, 0.1, 0.01, 0.02, 0.05, 0.005], [0.1, 0.2, 0.001, 0.2, 0.004, 0.02], [0.01, 0.001, 0.5, 0.1, 0.04, 0.003], [0.02, 0.2, 0.1, 0.4, 0.05, 0.001], [0.05, 0.004, 0.04, 0.05, 0.6, 0.04],[0.005, 0.02, 0.003, 0.001, 0.04, 0.7]]
+
+[train_powerlaw_cluster]
+m_0 = [3, 4]
+m = [2, 3]
+triad_probs = [0.7, 0.5, 0.1]
+
+[train_forest_fire]
+probs = [0.05, 0.1, 0.2, 0.3, 0.5, 0.7]
+
+################################################################################## Test data Info ##########################################################################
+[generate_test]
+synthetic_test_graphs = False
+
+[test_graph_types]
+albert_barabasi = False 
+watts_strogatz= False
+erdos_renyi = True
+powerlaw_cluster = False
+newman_watts_strogatz = False
+stochastic_block_model = False 
+forest_fire = False
+
+
+[test_input_num_per_ts]
+test_input_num_per_type_size = 1 
+
+[test_graphs_sizes]
+graphs_range_size1= False
+graphs_range_size2= False
+graphs_range_size3= False
+graphs_range_size4= False
+graphs_range_size5= False 
+graphs_range_size6= False
+graphs_range_size7= True
+graphs_range_size8= True
+graphs_range_size9= True
+graphs_range_size10= False
+graphs_range_size11= False
+
+[test_graphs_sizes_ranges]
+graphs_range_size1 = [100, 100]
+graphs_range_size2 = [500, 500]
+graphs_range_size3 = [1000, 1000]
+graphs_range_size4 = [2000, 2000]
+graphs_range_size5 = [50000, 50000]
+graphs_range_size6 = [100000, 100000]
+graphs_range_size7 = [300000, 300000] 
+graphs_range_size8 = [500000, 500000] 
+graphs_range_size9 = [1000000, 1000000] 
+graphs_range_size10 = [2000, 2000] 
+graphs_range_size11 = [5000, 5000]
+
+[test_syn_densities]
+graph_densities = [0.0001, 0.00005, 0.0005]
+
+[test_stochastic_block_model_cluster_sizes]
+clusters_set_1 = [0.2, 0.2, 0.3, 0.3]
+clusters_set_2 = [0.2, 0.2, 0.2, 0.2, 0.2]
+clusters_set_3 = [0.1, 0.2, 0.2, 0.2, 0.1, 0.2]
+
+
+[test_stochastic_block_model_probs]
+clusters_set_1 = [[0.3, 0.1, 0.01, 0.02], [0.1, 0.2, 0.001, 0.002], [0.01, 0.001, 0.25, 0.1], [0.02, 0.002, 0.1, 0.02]]
+clusters_set_2 = [[0.3, 0.1, 0.01, 0.02, 0.05], [0.1, 0.2, 0.001, 0.002, 0.004], [0.01, 0.001, 0.25, 0.1, 0.002], [0.02, 0.002, 0.1, 0.4, 0.05], [0.05, 0.004, 0.002, 0.05, 0.5]]
+clusters_set_3 = [[0.3, 0.1, 0.01, 0.02, 0.05, 0.005], [0.1, 0.2, 0.001, 0.2, 0.004, 0.02], [0.01, 0.001, 0.5, 0.1, 0.04, 0.003], [0.02, 0.2, 0.1, 0.4, 0.05, 0.001], [0.05, 0.004, 0.04, 0.05, 0.6, 0.04],[0.005, 0.02, 0.003, 0.001, 0.04, 0.7]]
+
+
+[test_powerlaw_cluster]
+m_0 = [2]
+m = [2]
+triad_probs = [0.5, 0.3, 0.1]
+
+[test_forest_fire]
+probs = [0.1, 0.3, 0.5]
+
+#######################
