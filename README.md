@@ -22,22 +22,27 @@ This tutorial includes instructions for graph data preparation, processing, samp
 **Albert-Barabasi**
 We calculate parameters of these graphs given the desired densities.
 Albert-Barabasi parameter calculation:
+NewEdgesPerNode = round(node_nums * graph_density / 2)
 
-
-#Nodes: 10,000 ~ 100,000
-Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
-#Graphs: 546
-Library: Networkx
+- #Nodes: 10,000 ~ 100,000
+- Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
+- #Graphs: 
+- Library: Networkx
 	
 **Watts-Strogatz**
 Watts-Strogatz parameter calculation:
-watts_neighbour_num = round(graph_density * (node_nums - 1))
+NeighbourNum = round(graph_density * (node_nums - 1))
 
-#Nodes: 10,000 ~ 100,000
-Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
-#Graphs: 546
-Library: Networkx
+- #Nodes: 10,000 ~ 100,000
+- Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
+- #Graphs: 
+- Library: Networkx
+  
 **Erdos-Renyi**
+- #Nodes: 10,000 ~ 100,000
+- Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
+- #Graphs: 
+- Library: Networkx
 
 **PowerLawCluster**
 We adjusted generation parameters (new edge numbers per node m, TriangleProb) to produce densities in  [0.00001, 0.001] and average clustering coefficient (CC) in [0.1, 0.6] extracted from real graph properties.
@@ -47,6 +52,16 @@ We adjusted generation parameters (new edge numbers per node m, TriangleProb) to
 10,000 | 2 | 0.2, 0.3, 0.4, 0.5, 0.6
 10,000 | 3 | 0.2, 0.4, 0.6, 0.8, 0.9, 1
 10,000 | 5 | 0.4, 0.6, 0.8, 1
+15,000 | 2 | 0.2, 0.5, 0.7
+15,000 | 5 | 0.3, 0.7, 1
+15,000 | 10 | 0.5, 1
+20,000 | 2 | 0.2, 0.4, 0.6, 0.8
+20,000 | 6 | 0.6, 0.8, 1
+20,000 | 8 | 0.6, 1
+20,000 | 10 | 0.5, 1
+25,000 | 2 | 
+25,000 | 5 | 
+25,000 | 15 | 
 
  
 
