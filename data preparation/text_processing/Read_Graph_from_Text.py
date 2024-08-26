@@ -79,11 +79,11 @@ def read_graph_from_text_pd_no_self_loop(file_path):
 
 
 if __name__ == '__main__':
-    #file_path = '/home/haleh/PycharmProjects/Graph_Sampling_Alg_Selection/venv/data/Real_Data/txt files/test/bio-CE-GT.edges'
-    #file_path = '/home/haleh/PycharmProjects/Graph_Sampling_Alg_Selection/venv/data/Real_Data/txt files/test/econ-beacxc.mtx'
-    #file_path = '/home/haleh/PycharmProjects/Graph_Sampling_Alg_Selection/venv/data/Real_Data/txt files/test/econ-wm1.mtx'
-    #file_path = '/home/haleh/PycharmProjects/Graph_Sampling_Alg_Selection/venv/data/Real_Data/txt files/test/Email-EU-Core'
-    file_path = '/home/haleh/PycharmProjects/Graph_Sampling_Alg_Selection/venv/data/Real_Data/txt files/test/econ-beaflw.mtx'
+    #file_path = './Graph_Sampling_Alg_Selection/venv/data/Real_Data/txt files/test/bio-CE-GT.edges'
+    #file_path = './Graph_Sampling_Alg_Selection/venv/data/Real_Data/txt files/test/econ-beacxc.mtx'
+    #file_path = './Graph_Sampling_Alg_Selection/venv/data/Real_Data/txt files/test/econ-wm1.mtx'
+    #file_path = './Graph_Sampling_Alg_Selection/venv/data/Real_Data/txt files/test/Email-EU-Core'
+    file_path = './Graph_Sampling_Alg_Selection/venv/data/Real_Data/txt files/test/econ-beaflw.mtx'
     graph1 = read_graph_from_text(file_path)
     print(graph1.nodes)
     print(graph1.edges)
