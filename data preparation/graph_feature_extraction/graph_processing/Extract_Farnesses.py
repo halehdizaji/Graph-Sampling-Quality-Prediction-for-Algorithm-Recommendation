@@ -5,7 +5,7 @@ import sys
 sys.path.append('../')
 from Graph_Processing_fast_v3 import graph_feature_extractor
 
-graph_folder = '/home/haleh/PycharmProjects/Graph_Sampling_Alg_Selection/venv/data/graphs_data/real_graphs/dataset_1/graphs/test/'
+graph_folder = './Graph_Sampling_Alg_Selection/venv/data/graphs_data/real_graphs/dataset_1/graphs/test/'
 graph_file_name = 'ID_test_Real_soc-wiki-Vote.mtx.pickle'
 graph = pickle.load(open(graph_folder + graph_file_name, 'rb'))
 
