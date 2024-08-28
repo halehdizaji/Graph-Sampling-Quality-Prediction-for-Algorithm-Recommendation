@@ -48,7 +48,7 @@ Our tool consist of three ML models:
 
 ### Synthetic graphs - train
 We generated five types of synthetic graphs, with the following settings.
-## Albert-Barabasi
+#### Albert-Barabasi
 These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes, and densities in [0.00001, 0.001], generated with **Networkx**.
 We calculate the new edge numbers per node parameter (NewEdgesPerNode) as follows (N: node numbers, D: graph density, m: new edges per node):
 
@@ -57,7 +57,7 @@ $$m = \lfloor(N * D / 2)\rfloor$$
 - N: 10,000, 
 - D: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
 	
-**Watts-Strogatz**
+#### Watts-Strogatz
 Watts-Strogatz parameter calculation:
 NeighbourNum = round(graph_density * (node_nums - 1))
 
@@ -66,13 +66,13 @@ NeighbourNum = round(graph_density * (node_nums - 1))
 - #Graphs: 
 - Library: Networkx
   
-**Erdos-Renyi**
+#### Erdos-Renyi
 - #Nodes: 10,000 ~ 100,000
 - Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
 - #Graphs: 
 - Library: Networkx
 
-**PowerLawCluster**
+#### PowerLawCluster
 We adjusted generation parameters (new edge numbers per node m, TriangleProb) to produce densities in  [0.00001, 0.001] and average clustering coefficient (CC) in [0.1, 0.6] extracted from real graph properties.
 
 #Nodes | m | TriangleProb 
@@ -104,7 +104,7 @@ We adjusted generation parameters (new edge numbers per node m, TriangleProb) to
 45,000 | 10 | 0.9, 1
 45,000 | 20 | 1
 
-**Forest-Fire**
+#### Forest-Fire
 consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward probabilites to produce densities in [0.00004, 0.001]. 
 #Nodes | forward/backward probability 
 --- | ---  
@@ -118,7 +118,7 @@ consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward 
 45,000 | 0.01, 0.1, 0.2, 0.3
 50,000 | 0.01, 0.2, 0.3
 
-**Stochastic Block Model**
+#### Stochastic Block Model
  
 
 ### Synthetic graphs - test
