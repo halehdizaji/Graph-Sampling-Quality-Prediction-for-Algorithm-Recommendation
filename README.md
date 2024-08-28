@@ -49,11 +49,11 @@ Our tool consist of three ML models:
 ### Synthetic graphs - train
 We generated five types of synthetic graphs, with the following settings.
 ## Albert-Barabasi
-These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes, and densities in [0.00001, 0.001].
-We calculate the new edge numbers per node parameter (NewEdgesPerNode) as follows:
-$$NewEdgesPerNode = \lfloor(node_nums * graph_density / 2)\rfloor$$
+These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes, and densities in [0.00001, 0.001], generated with Networkx.
+We calculate the new edge numbers per node parameter (NewEdgesPerNode) as follows (N: node numbers, D: graph density, m: new edges per node):
+$$m = \lfloor(N * D / 2)\rfloor$$
 
-- #Nodes: 10,000 ~ 100,000
+- 
 - Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
 - #Graphs: 
 - Library: Networkx
