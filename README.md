@@ -16,16 +16,16 @@ This tutorial includes instructions for graph data preparation, processing, samp
 9. Result analysis
 10. ML explainability
 
-## Model description
+## Sampling algorithms
 Our model predicts and recommends graph sampling algorithms of three categories, listed below:
-1. Node-based sampling
+* Node-based sampling
    * Random node
    * Random degree node
-3. Edge-based sampling
+* Edge-based sampling
    * Random edge
    * Rendom node-edge
    * Induced random edge
-5. Traversal sampling
+* Traversal sampling
    * Random jump
    * Metropolis Hastings random walk
    * SnowBall
@@ -33,7 +33,7 @@ Our model predicts and recommends graph sampling algorithms of three categories,
    * Frontier
    * Rank degree
    * Expansion
-### Sampling algorithms
+###  
 
 
 ### Quality/performance metrics
