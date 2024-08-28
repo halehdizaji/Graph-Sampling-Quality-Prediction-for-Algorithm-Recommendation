@@ -4,16 +4,41 @@
 This repository includes the code and data for the **Graph Sampling Quality Prediction for Algorithm Recommendation** paper, a machine learning (ML) based method for predicting quality and performance of different graph sampling algorithms of three categories (node-based, edge-based and traversal).
 
 This tutorial includes instructions for graph data preparation, processing, sampling, model training and evaluation, providing model reproducibility. It consists of following sections:
-1. Data generation
-2. Graph feature extraction
-3. Graph sampling and evaluation
-4. Mutual information analysis
-5. Feature selection and preparation
-6. Data analysis
-7. Model training
+1. Model description
+2. Data generation
+3. Graph feature extraction
+4. Graph sampling and evaluation
+5. Mutual information analysis
+6. Feature selection and preparation
+7. Data analysis
+8. Model training
 8. Model testing
 9. Result analysis
 10. ML explainability
+
+## Model description
+Our model predicts and recommends graph sampling algorithms of three categories, listed below:
+1. Node-based sampling
+   * Random node
+   * Random degree node
+3. Edge-based sampling
+   * Random edge
+   * Rendom node-edge
+   * Induced random edge
+5. Traversal sampling
+   * Random jump
+   * Metropolis Hastings random walk
+   * SnowBall
+   * Forest Fire
+   * Frontier
+   * Rank degree
+   * Expansion
+### Sampling algorithms
+
+
+### Quality/performance metrics
+
+### ML models
 
 ## Data generation
 
