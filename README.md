@@ -47,8 +47,8 @@ Our tool consist of three ML models:
 ## Data generation
 
 ### Synthetic graphs - train
-
-**Albert-Barabasi**
+We generated five types of synthetic graphs, described
+## Albert-Barabasi
 We calculate parameters of these graphs given the desired densities.
 Albert-Barabasi parameter calculation:
 NewEdgesPerNode = round(node_nums * graph_density / 2)
