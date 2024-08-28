@@ -54,7 +54,7 @@ We calculate the new edge numbers per node parameter (NewEdgesPerNode) as follow
 
 $$m = \lfloor(N * D / 2)\rfloor$$
 
-- N: 
+- N: 10,000, 
 - D: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
 	
 **Watts-Strogatz**
