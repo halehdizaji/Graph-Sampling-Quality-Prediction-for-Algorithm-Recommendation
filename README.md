@@ -62,16 +62,13 @@ The following equation gives the number of neighbours of each node (|Nei|) in th
 
 $$|Nei| = \lfloor(D * (N - 1))\rfloor$$
 
-- |Nei|: 2~98
+- $$|Nei|$$: 2~98
   
 #### Erdos-Renyi
-- #Nodes: 10,000 ~ 100,000
-- Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
-- #Graphs: 
-- Library: Networkx
+These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes and edge probabilities (densities) in [0.00001, 0.001], generated with **Networkx**.
 
 #### PowerLawCluster
-We adjusted generation parameters (new edge numbers per node m, TriangleProb) to produce densities in  [0.00001, 0.001] and average clustering coefficient (CC) in [0.1, 0.6] extracted from real graph properties.
+PowerLawCluster graphs of **Networkx** include 60 graphs with adjusted parameters (new edge numbers per node m and TriangleProb) to produce densities in  [0.00001, 0.001] and average clustering coefficient (CC) in [0.1, 0.6] extracted from real graph properties. 
 
 #Nodes | m | TriangleProb 
 --- | --- | --- 
@@ -103,7 +100,8 @@ We adjusted generation parameters (new edge numbers per node m, TriangleProb) to
 45,000 | 20 | 1
 
 #### Forest-Fire
-consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward probabilites to produce densities in [0.00004, 0.001]. 
+The evolution based Forest-Fire graphs consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward probabilites to produce densities in [0.00004, 0.001]. We used Snap-stanford library for their generation.
+
 #Nodes | forward/backward probability 
 --- | ---  
 10,000 | 0.1, 0.2, 0.3
