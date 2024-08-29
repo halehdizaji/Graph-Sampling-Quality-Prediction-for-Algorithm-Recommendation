@@ -50,7 +50,7 @@ Our tool consist of three ML models:
 We generated five types of synthetic graphs, with the following settings.
 #### Albert-Barabasi
 These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes, and densities in [0.00001, 0.001], generated with **Networkx**.
-We calculate the new edge numbers per node parameter (NewEdgesPerNode) as follows (N: node numbers, D: graph density, m: new edges per node):
+We calculate the new edge numbers per node parameter (NewEdgesPerNode) as follows (N: node numbers, D: graph density, m: new edge numbers per node):
 
 $$m = \lfloor(N * D / 2)\rfloor$$
  
@@ -134,6 +134,11 @@ $$N_c = \lfloor N/K\rfloor$$
  
 
 ### Synthetic graphs - test
+We generated 29 graphs of three types Albert-Barabasi, Erdos-Renyi and Watts-Strogatz with 150,000-450,000 nodes and following parameters:
+
+* Albert-Barabasi with m of 1-22; 
+* Watts-Strogatz with $$|Nei|$$ of 2-44;
+* Erdos-Renyi with edge probabilities in [0.000008,0.0001].
 
 ### Real graphs
 
