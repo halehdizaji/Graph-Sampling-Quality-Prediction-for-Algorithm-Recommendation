@@ -125,7 +125,9 @@ $\alpha$: 0.01, 0.001, 0.1
 We calculated parameters of these graphs (cluster size |N_c|, inter cluster density $$\rho'$$ and intra cluster density $$\rho$$) according to the following equations :
 
 $$\rho = (D * (N-1) * K) / (N - K + \alpha * N / (K - 2))$$
+
 $$\rho = \alpha * \rho$$
+
 $$|N_c| = \lfloor(N/K)\rfloor$$
  
 
