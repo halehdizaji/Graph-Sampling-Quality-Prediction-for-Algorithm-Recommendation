@@ -118,17 +118,19 @@ The evolution based Forest-Fire graphs consists of 36 graphs with 10,000 ~ 100,0
 The clustering based graphs of stochastic block model consists of 180 graphs with the following characteristics, generated with **Networkx** ($K$: number of clusters, $\alpha$: inter-intra cluster probability ratio):
 
 $$N$$: 5,000, 15,000, 25,000, 35,000, 45,000
+
 $$D$$: 0.0001, 0.0005, 0.0009
-$K$: 10, 15, 20, 25
-$\alpha$: 0.01, 0.001, 0.1
+
+$$K$$: 10, 15, 20, 25
+$$\alpha$$: 0.01, 0.001, 0.1
 
 We calculated parameters of these graphs (cluster size |N_c|, inter cluster density $$\rho'$$ and intra cluster density $$\rho$$) according to the following equations :
 
 $$\rho = (D * (N-1) * K) / (N - K + \alpha * N / (K - 2))$$
 
-$$\rho = \alpha * \rho$$
+$$\rho' = \alpha * \rho$$
 
-$$|N_c| = \lfloor(N/K)\rfloor$$
+$$|N_c| = \lfloorN/K\rfloor$$
  
 
 ### Synthetic graphs - test
