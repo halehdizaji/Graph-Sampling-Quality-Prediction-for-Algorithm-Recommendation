@@ -53,18 +53,16 @@ These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes, and densities in
 We calculate the new edge numbers per node parameter (NewEdgesPerNode) as follows (N: node numbers, D: graph density, m: new edges per node):
 
 $$m = \lfloor(N * D / 2)\rfloor$$
-
-- N: 10,000, 
-- D: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
+ 
+- m: 1~42
 	
 #### Watts-Strogatz
-Watts-Strogatz parameter calculation:
-NeighbourNum = round(graph_density * (node_nums - 1))
+Watts-Strogatz graphs include xxx graphs with 10,000 ~ 100,000 nodes and densities in [0.00001, 0.001], generated with **Networkx**.
+The following equation gives the number of neighbours of each node (|Nei|) in the ring toplogy, given N and D:
 
-- #Nodes: 10,000 ~ 100,000
-- Density: 0.00001, 0.00003, 0.00005, 0.00007, 0.00009, 0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001
-- #Graphs: 
-- Library: Networkx
+$$|Nei| = \lfloor(D * (N - 1))\rfloor$$
+
+- |Nei|: 2~98
   
 #### Erdos-Renyi
 - #Nodes: 10,000 ~ 100,000
