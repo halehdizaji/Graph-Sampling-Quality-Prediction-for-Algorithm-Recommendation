@@ -148,8 +148,12 @@ We generated 29 graphs of three types Albert-Barabasi, Erdos-Renyi and Watts-Str
 
 ### Data generation instructions
 To generate synthetic graphs inside folder "data preparation/graph generation" run the following command:
-bash run_generate_synthetic_graphs 
 
+```
+bash run_generate_synthetic_graphs -dataset_num data_folder_number
+```
+
+It generates synthetic graphs with the characteristics definded in dataset_info file of the specified folder number.
 
 ## Graph feature extraction
 
