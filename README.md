@@ -46,7 +46,9 @@ Our tool consist of three ML models:
 
 ## Data generation
 
-### Synthetic graphs - train
+### Dataset details
+
+#### Synthetic graphs - train
 We generated five types of synthetic graphs, with the following settings.
 #### Albert-Barabasi
 These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes, and densities in [0.00001, 0.001], generated with **Networkx**.
@@ -56,7 +58,7 @@ $$m = \lfloor(N * D / 2)\rfloor$$
  
 - m: 1~42
 	
-#### Watts-Strogatz
+**Watts-Strogatz**
 Watts-Strogatz graphs include xxx graphs with 10,000 ~ 100,000 nodes and densities in [0.00001, 0.001], generated with **Networkx**.
 The following equation gives the number of neighbours of each node (|Nei|) in the ring toplogy, given N and D:
 
@@ -64,10 +66,10 @@ $$|Nei| = \lfloor(D * (N - 1))\rfloor$$
 
 - $$|Nei|$$: 2~98
   
-#### Erdos-Renyi
+**Erdos-Renyi**
 These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes and edge probabilities (densities) in [0.00001, 0.001], generated with **Networkx**.
 
-#### PowerLawCluster
+**PowerLawCluster**
 PowerLawCluster graphs of **Networkx** include 60 graphs with adjusted parameters (new edge numbers per node m and TriangleProb) to produce densities in  [0.00001, 0.001] and average clustering coefficient (CC) in [0.1, 0.6] extracted from real graph properties. 
 
 #Nodes | m | TriangleProb 
@@ -99,7 +101,7 @@ PowerLawCluster graphs of **Networkx** include 60 graphs with adjusted parameter
 45,000 | 10 | 0.9, 1
 45,000 | 20 | 1
 
-#### Forest-Fire
+**Forest-Fire**
 The evolution based Forest-Fire graphs consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward probabilites to produce densities in [0.00004, 0.001]. We used Snap-stanford library for their generation.
 
 #Nodes | forward/backward probability 
@@ -114,7 +116,7 @@ The evolution based Forest-Fire graphs consists of 36 graphs with 10,000 ~ 100,0
 45,000 | 0.01, 0.1, 0.2, 0.3
 50,000 | 0.01, 0.2, 0.3
 
-#### Stochastic Block Model
+**Stochastic Block Model**
 The clustering based graphs of stochastic block model consists of 180 graphs with the following characteristics, generated with **Networkx** ($K$: number of clusters, $\alpha$: inter-intra cluster probability ratio):
 
 $$N$$: 5,000, 15,000, 25,000, 35,000, 45,000
@@ -133,14 +135,21 @@ $$\rho' = \alpha * \rho$$
 $$N_c = \lfloor N/K\rfloor$$
  
 
-### Synthetic graphs - test
+#### Synthetic graphs - test
 We generated 29 graphs of three types Albert-Barabasi, Erdos-Renyi and Watts-Strogatz with 150,000-450,000 nodes and following parameters:
 
 * Albert-Barabasi with m of 1-22; 
 * Watts-Strogatz with $$|Nei|$$ of 2-44;
 * Erdos-Renyi with edge probabilities in [0.000008,0.0001].
 
-### Real graphs
+
+
+#### Real graphs
+
+### Data generation instructions
+To generate synthetic graphs inside folder "data preparation/graph generation" run the following command:
+
+
 
 ## Graph feature extraction
 
