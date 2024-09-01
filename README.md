@@ -168,13 +168,15 @@ bash run_parallel_major_feature_extraction_multi_graphs
 It includes sampling from several graphs and evaluating samples under three quality metrics (degree, clustering coefficent and hop-plots distribution divergences) and execution time. 
 
 ### Execution instruction
-The following command samples (in parallel) from the graphs in the specified folder with the desired sampling settings such as sampling algorithms and number of iterations:
+The following command collects samples (in parallel) from the graphs in the specified folder with the desired sampling settings such as sampling algorithms and number of iterations:
 
 ```
 bash sample_from_several_large_graphs
 ```
-
-
+Then running this command evaluates samples under quality metrics.
+```
+bash run_parallel_processing_samples_multi_graph
+```
 
 ## Mutual information analysis
 ## Feature selection and preparation
