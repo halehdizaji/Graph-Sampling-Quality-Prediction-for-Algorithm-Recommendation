@@ -180,8 +180,17 @@ bash run_parallel_processing_samples_multi_graph
 
 ## Mutual information analysis
 ## Feature selection and preparation
+We normalize all graphs features using maximum and exponential-logarithmic (EL) applied for the following statistics:
+* Maximum: minimum, average and medium values
+* EL: maximum and variance values, calculation times, and raw features.
+The notebook xxx includes the steps for normalization and selecting features for each metric (as the result of MI).
+
 ## Data analysis
+
 ## Model training
+
+
+
 ## Model testing
 ## Result analysis
 ## ML explainability
