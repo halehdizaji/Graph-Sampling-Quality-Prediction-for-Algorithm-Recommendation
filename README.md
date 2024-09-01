@@ -158,13 +158,23 @@ It generates synthetic graphs with the characteristics definded in dataset_info 
 ## Graph feature extraction
 This script extracts some time-consuming features i.e. node/edge betweenness, eigenvector, pagerank, clustering coefficient, components sizes, maximum spannig tree degrees, shortest path lengths and assortativity with their statistics and distributions.
 ### Execution instruction
-The following command to extracts the mejor features of all graphs in the specified folder:
+The following command to extracts the major features of all graphs in the specified folder:
 
 ```
 bash run_parallel_major_feature_extraction_multi_graphs
 ```
 
 ## Graph sampling and evaluation
+It includes sampling from several graphs and evaluating samples under three quality metrics (degree, clustering coefficent and hop-plots distribution divergences) and execution time. 
+
+### Execution instruction
+The following command samples (in parallel) from the graphs in the specified folder with the desired sampling settings such as sampling algorithms and number of iterations:
+
+```
+bash sample_from_several_large_graphs
+```
+
+
 
 ## Mutual information analysis
 ## Feature selection and preparation
