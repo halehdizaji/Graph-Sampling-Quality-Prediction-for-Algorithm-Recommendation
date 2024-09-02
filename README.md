@@ -1,5 +1,5 @@
 # Graph Sampling Quality Prediction for Algorithm Recommendation
-
+![alt text](/assets/images/graph_sampling.png)
 
 This repository includes the code and data for the **Graph Sampling Quality Prediction for Algorithm Recommendation** paper, a machine learning (ML) based method for predicting quality and performance of different graph sampling algorithms of three categories (node-based, edge-based and traversal).
 
