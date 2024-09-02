@@ -178,8 +178,11 @@ Then running this command evaluates samples under quality metrics.
 bash run_parallel_processing_samples_multi_graph
 ```
 
-## Mutual information analysis
-## Feature selection and preparation
+## Mutual information analysis and feature selection
+Mutual information (MI) analysis in notebook xxx uses sklearn for selecting the most relevant features for each metric (quality and performance), with MI scores higher than 0.99 with at least one sampling algorithm.
+The following table represents the selected features per metric. These features along with sampling features () constitute feature vectors for ML models.
+
+## Feature normalization
 We normalize all graphs features using maximum and exponential-logarithmic (EL) applied for the following statistics:
 * **Maximum normalization**: minimum, average and medium values
 * **EL normalization**: maximum and variance values, calculation times, and raw features.
@@ -187,10 +190,12 @@ We normalize all graphs features using maximum and exponential-logarithmic (EL) 
 The notebook xxx includes the steps for normalization.
 
 ## Data analysis
-This phase includes duplicate train/test data elimination and visualization of train/test data features using t-SNE.
+The notebook xxxx includes data analysis steps including duplicate train/test data elimination and visualization of train/test data features using t-SNE.
 
 ## Model training
+Model training consists of constructing feature vectors for each sampling metric and training three ML models, RF, MLP and kNN with tuning their hyper-parameters (see notebook xxx).  
 
+### Hyper-parameter tuning
 
 
 ## Model testing
