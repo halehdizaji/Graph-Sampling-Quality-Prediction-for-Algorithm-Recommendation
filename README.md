@@ -205,7 +205,21 @@ Model | Hyperparameter | Values
 kNN | algorithm | 'auto', 'ball_tree', 'kd_tree', 'brute'
 kNN | n_neighbors | 4, 5, 10, 15
 kNN | weights | 'uniform', 'distance'
-RF | bootstrap 
+RF | bootstrap | True
+RF | max_depth | None, 90, 100, 110
+RF | max_features | 2, 3
+RF | min_samples_leaf | 2, 3, 4, 5
+RF | min_samples_split | 8, 10, 12
+RF | n_estimators | 100, 200, 300, 400
+MLP | activation | 'tanh', 'relu'
+MLP | hidden_layer_sizes | (30), (50), (100), (30,30), (50,50), (100,100)
+MLP | solver | 'sgd', 'adam'
+MLP | alpha | 0.0001, 0.05
+MLP | learning_rate | 'constant', 'adaptive'
+MLP | shuffle | True
+MLP | early_stopping | True
+
+
 
 
 
