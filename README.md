@@ -179,7 +179,7 @@ bash run_parallel_processing_samples_multi_graph
 ```
 
 ## Mutual information analysis and feature selection
-Mutual information (MI) analysis in notebook xxx uses sklearn for selecting the most relevant features for each metric (quality and performance), having MI scores higher than 0.99 with at least one sampling algorithm. 
+Mutual information (MI) analysis in notebook *samplings_analysis_MI.ipynb* uses sklearn for selecting the most relevant features for each metric (quality and performance), having MI scores higher than 0.99 with at least one sampling algorithm. 
 Concatenation of these features with sampling features (12 dimensional 1-hot vector for sampling algorithm, 3 dimensions for 1-hot vector of algorithm type and 1 dimention for rate) constitutes the input feature vector for ML models.
 
 
@@ -188,13 +188,13 @@ We normalize all graphs features using maximum and exponential-logarithmic (EL) 
 * **Maximum normalization**: minimum, average and medium values
 * **EL normalization**: maximum and variance values, calculation times, and raw features.
 
-The notebook xxx includes the steps for normalization.
+The notebook *create_datasets.ipynb* includes the steps for normalization.
 
 ## Data analysis
-The notebook xxxx includes data analysis steps including duplicate train/test data elimination and visualization of train/test data features using t-SNE.
+The notebook *data_analysis.ipynb* includes data analysis steps including duplicate train/test data elimination and visualization of train/test data features using t-SNE.
 
 ## Model training
-Model training consists of constructing feature vectors for each sampling metric and training three ML models, RF, MLP and kNN with tuning their hyper-parameters (see notebook xxx).  
+Model training consists of constructing feature vectors for each sampling metric and training three ML models, RF, MLP and kNN with tuning their hyper-parameters (see notebook *train_models.ipynb*).  
 
 ### Hyper-parameter tuning
 We performed five-fold cross validation using GreadSearchCV with following search space for different hyper-parameters of ML models:
