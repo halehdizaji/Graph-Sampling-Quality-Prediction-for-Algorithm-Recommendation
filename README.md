@@ -51,7 +51,7 @@ Our tool consist of three ML models:
 We generated five types of synthetic graphs, with the following settings.
 
 **Albert-Barabasi**
-These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes, and densities in [0.00001, 0.001], generated with **Networkx**.
+These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes, and densities in [0.00001, 0.001], generated with [Networkx](https://networkx.org/documentation/stable/reference/generated/networkx.generators.random_graphs.barabasi_albert_graph.html).
 We calculate the new edge numbers per node parameter (NewEdgesPerNode) as follows (N: node numbers, D: graph density, m: new edge numbers per node):
 
 $$m = \lfloor(N * D / 2)\rfloor$$
