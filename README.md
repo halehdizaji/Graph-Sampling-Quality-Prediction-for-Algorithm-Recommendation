@@ -219,11 +219,6 @@ MLP | learning_rate | 'constant', 'adaptive'
 MLP | shuffle | True
 MLP | early_stopping | True
 
-
-
-
-
-
 ## Model testing
 ## Result analysis
 ## ML explainability
