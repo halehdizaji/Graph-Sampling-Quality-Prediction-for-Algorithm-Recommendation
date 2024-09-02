@@ -102,7 +102,7 @@ PowerLawCluster graphs of **Networkx** include 60 graphs with adjusted parameter
 45,000 | 20 | 1
 
 **Forest-Fire**
-The evolution based Forest-Fire graphs consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward probabilites to produce densities in [0.00004, 0.001]. We used Snap-stanford library for their generation.
+The evolution based Forest-Fire graphs consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward probabilites to produce densities in [0.00004, 0.001]. We used [Snap-stanford](https://snap.stanford.edu/snappy/doc/reference/GenForestFire.html) library for their generation.
 
 #Nodes | forward/backward probability 
 --- | ---  
