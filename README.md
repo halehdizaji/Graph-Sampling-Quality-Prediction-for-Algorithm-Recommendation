@@ -180,7 +180,10 @@ bash run_parallel_processing_samples_multi_graph
 
 ## Mutual information analysis and feature selection
 Mutual information (MI) analysis in notebook xxx uses sklearn for selecting the most relevant features for each metric (quality and performance), with MI scores higher than 0.99 with at least one sampling algorithm.
-The following table represents the selected features per metric. These features along with sampling features () constitute feature vectors for ML models.
+
+The following table represents the selected features per metric. These features along with sampling features constitute feature vectors for ML models.
+
+
 
 ## Feature normalization
 We normalize all graphs features using maximum and exponential-logarithmic (EL) applied for the following statistics:
