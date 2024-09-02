@@ -184,7 +184,6 @@ Mutual information (MI) analysis in notebook xxx uses sklearn for selecting the 
 The following table represents the selected features per metric. These features along with sampling features constitute feature vectors for ML models.
 
 
-
 ## Feature normalization
 We normalize all graphs features using maximum and exponential-logarithmic (EL) applied for the following statistics:
 * **Maximum normalization**: minimum, average and medium values
@@ -199,6 +198,16 @@ The notebook xxxx includes data analysis steps including duplicate train/test da
 Model training consists of constructing feature vectors for each sampling metric and training three ML models, RF, MLP and kNN with tuning their hyper-parameters (see notebook xxx).  
 
 ### Hyper-parameter tuning
+We performed five-fold cross validation using GreadSearchCV with following search space for different hyper-parameters of ML models:
+
+Model | Hyperparameter | Values
+--- | ---  | ---  
+kNN | algorithm | 'auto', 'ball_tree', 'kd_tree', 'brute'
+kNN | n_neighbors | 4, 5, 10, 15
+kNN | weights | 'uniform', 'distance'
+RF | bootstrap 
+
+
 
 
 ## Model testing
