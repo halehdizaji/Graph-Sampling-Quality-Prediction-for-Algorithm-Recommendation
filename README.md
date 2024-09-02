@@ -180,7 +180,7 @@ bash run_parallel_processing_samples_multi_graph
 
 ## Mutual information analysis and feature selection
 Mutual information (MI) analysis in notebook xxx uses sklearn for selecting the most relevant features for each metric (quality and performance), with MI scores higher than 0.99 with at least one sampling algorithm. 
-Concatenation of these features with sampling features (12 dimensions 1-hot vector for sampling algorithm, 3 dimensions for 1-hot vector of sampling algorithm type and 1 dimention for sampling rate) constitutes the input feature vector for ML models.
+Concatenation of these features with sampling features (12 dimensional 1-hot vector for sampling algorithm, 3 dimensions for 1-hot vector of sampling algorithm type and 1 dimention for sampling rate) constitutes the input feature vector for ML models.
 
 
 ## Feature normalization
