@@ -183,6 +183,23 @@ Mutual information (MI) analysis in notebook xxx uses sklearn for selecting the 
 
 The following table represents the selected features per metric. These features along with sampling features constitute feature vectors for ML models.
 
+Metric | Graph Features
+--- | ---  
+Degree | 'clust_coeff_calc_time', 'connected_components_calc_time', 'degree_assortativity', 'degree_assortativity_calc_time', 'edge_nums', 'edge_count/node_count',
+            'eigenvector_centrality_calc_time', 'graph_density', 'clust_coeff_max', 'max_connected_components_size', 'degree_max', 'degrees_spanning_tree_max', 'eigenvector_centrality_max',
+            'node_betweenness_centrality_max', 'pagerank_centrality_max', 'shortest_path_length_max', 'max_spanning_tree_calc_time', 'clust_coeff_avg', 'mean_connected_components_size', 'degree_avg',
+            'degrees_spanning_tree_avg', 'eigenvector_centrality_avg', 'node_betweenness_centrality_avg', 'shortest_path_length_avg', 'clust_coeff_median', 'median_connected_components_size',
+            'degree_median', 'degrees_spanning_tree_median', 'eigenvector_centrality_median', 'node_betweenness_centrality_median', 'pagerank_centrality_median', 'clust_coeff_min',
+            'min_connected_components_size', 'degree_min', 'degrees_spanning_tree_min', 'eigenvector_centrality_min', 'node_betweenness_centrality_min', 'pagerank_centrality_min',
+            'shortest_path_length_min', 'node_count/edge_count', 'num_connected_components', 'pagerank_centrality_calc_time', 'clust_coeff_var', 'var_connected_components_size', 'degree_var',
+            'degrees_spanning_tree_var', 'eigenvector_centrality_var', 'node_betweenness_centrality_var', 'pagerank_centrality_var', 'shortest_path_length_var'
+CC | 'clust_coeff_calc_time', 'connected_components_calc_time', 'degree_assortativity', 'degree_assortativity_calc_time', 'eigenvector_centrality_calc_time',
+            'max_connected_components_size', 'eigenvector_centrality_max', 'node_betweenness_centrality_max', 'pagerank_centrality_max', 'max_spanning_tree_calc_time',
+            'clust_coeff_avg', 'mean_connected_components_size', 'degrees_spanning_tree_avg', 'eigenvector_centrality_avg', 'node_betweenness_centrality_avg', 'pagerank_centrality_avg',
+            'shortest_path_length_avg', 'clust_coeff_median', 'median_connected_components_size', 'eigenvector_centrality_median', 'node_betweenness_centrality_median', 'pagerank_centrality_median',
+            'clust_coeff_min', 'min_connected_components_size', 'node_betweenness_centrality_min', 'pagerank_centrality_min', 'shortest_path_length_min', 'node_nums', 'pagerank_centrality_calc_time',
+            'clust_coeff_var', 'degree_var', 'node_betweenness_centrality_var', 'pagerank_centrality_var'
+Hop-plots |
 
 ## Feature normalization
 We normalize all graphs features using maximum and exponential-logarithmic (EL) applied for the following statistics:
