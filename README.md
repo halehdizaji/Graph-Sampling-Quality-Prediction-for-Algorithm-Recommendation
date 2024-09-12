@@ -218,9 +218,13 @@ MLP | learning_rate | 'constant', 'adaptive'
 MLP | shuffle | True
 MLP | early_stopping | True
 
+To run the model training and hyper-parameter tuning use *train_models.ipynb*.
 
 ## Model testing
-
+The notebook *train_models.ipynb* tests the trained models on the test set.
 
 ## Result analysis
+
+The notebook ""
+
 ## ML explainability
