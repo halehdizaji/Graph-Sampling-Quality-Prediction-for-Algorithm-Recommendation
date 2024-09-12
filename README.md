@@ -225,6 +225,7 @@ The notebook *train_models.ipynb* tests the trained models on the test set.
 
 ## Result analysis
 
-The notebook "result_analysis.ipynb" calculates RMSE of predictions for all metrics and compares top-k ranking accuracy in terms of *Hits@k* of ML models with two baseline methods *random selection* and *k-best selection*. 
+The notebook *result_analysis.ipynb* calculates RMSE of predictions for all metrics and compares top-k ranking accuracy in terms of *Hits@k* of ML models with two baseline methods *random selection* and *k-best selection*. 
 
 ## ML explainability
+The notebook *ML-Explainability*
