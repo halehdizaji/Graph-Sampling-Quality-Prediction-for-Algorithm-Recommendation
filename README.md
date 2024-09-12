@@ -197,10 +197,10 @@ The notebook *data_analysis.ipynb* includes data analysis steps including duplic
 Model training consists of constructing feature vectors for each sampling metric and training three ML models, RF, MLP and kNN with tuning their hyper-parameters (see notebook *train_models.ipynb*).  
 
 ### Hyper-parameter tuning
-We performed five-fold cross validation using GreadSearchCV with following search space for different hyper-parameters of ML models:
+We performed five-fold cross validation using GreadSearchCV with following search space for different hyper-parameters of ML models, which results in the following hyper-parameters for each ML model.
 
-Model | Hyperparameter | Values
---- | ---  | ---  
+Model | Hyperparameter | Search Space | Tuned value 
+--- | ---  | --- | ---
 kNN | algorithm | 'auto', 'ball_tree', 'kd_tree', 'brute'
 kNN | n_neighbors | 4, 5, 10, 15
 kNN | weights | 'uniform', 'distance'
@@ -217,6 +217,8 @@ MLP | alpha | 0.0001, 0.05
 MLP | learning_rate | 'constant', 'adaptive'
 MLP | shuffle | True
 MLP | early_stopping | True
+
+
 
 ## Model testing
 ## Result analysis
