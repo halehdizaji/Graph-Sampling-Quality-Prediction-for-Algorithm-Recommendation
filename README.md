@@ -220,14 +220,14 @@ MLP | learning_rate | 'constant', 'adaptive'
 MLP | shuffle | True
 MLP | early_stopping | True
 
-To run the model training and hyper-parameter tuning use *train_models.ipynb*.
+To run the model training and hyper-parameter tuning use *train_models/train_models.ipynb*.
 
 ## Model testing
-The notebook *train_models.ipynb* tests the trained models on the test set.
+The notebook *test_models/test_models.ipynb* tests the trained models on the test set.
 
 ## Result analysis
 
-The notebook *result_analysis.ipynb* calculates RMSE of predictions for all metrics and compares top-k ranking accuracy in terms of *Hits@k* of ML models with two baseline methods *random selection* and *k-best selection*. 
+The notebook *result_analysis/result_analysis.ipynb* calculates RMSE of predictions for all metrics and compares top-k ranking accuracy in terms of *Hits@k* of ML models with two baseline methods *random selection* and *k-best selection*. 
 
 ## ML explainability
 The notebook *result_analysis/ML-explainability* ranks different input graph and sampling features according to their calculated importance using LIME library. It provides average rankings for each ML model and quality metric. 
