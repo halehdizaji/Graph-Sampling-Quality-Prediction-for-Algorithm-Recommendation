@@ -224,7 +224,7 @@ MLP | early_stopping | True | True
 To run the model training and hyper-parameter tuning use *train_models/train_models.ipynb*.
 
 ## Model testing
-The notebook *test_models/test_models.ipynb* tests the trained models on the test set.
+The notebook *test_models/test_models.ipynb* tests the trained models on the test set using RMSE for prediction and Hits@k for ranking accuracy evaluation.
 
 ## Result analysis
 
