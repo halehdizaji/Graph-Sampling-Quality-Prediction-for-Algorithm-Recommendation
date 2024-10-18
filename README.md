@@ -138,7 +138,7 @@ $$N_c = \lfloor N/K\rfloor$$
  
 
 #### Test synthetic graphs
-We generated 29 graphs of three types Albert-Barabasi, Erdos-Renyi and Watts-Strogatz with 150,000-450,000 nodes and following parameters:
+We generated 29 testing graphs of three types Albert-Barabasi, Erdos-Renyi, and Watts-Strogatz with 150,000-450,000 nodes and the following parameters:
 
 * Albert-Barabasi with m of 1-22; 
 * Watts-Strogatz with $$|Nei|$$ of 2-44;
