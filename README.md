@@ -34,7 +34,7 @@ Our model predicts and recommends graph sampling algorithms of three categories,
    * Rank degree
    * Expansion
 ###  Sampling quality metrics
-We consider three quality metrics for evaluating sampling algorithms: degree distribution, clustering coefficient distribution and hop-plots distribution divergence.
+We consider three quality metrics (distribution divergences) for evaluating sampling algorithms: degree distribution (D3), clustering coefficient distribution (C2D2), hop-plots distribution (HPD2) and hop-plots distribution for the largest connected component (HPDC) divergence.
 ### Sampling performance metric
 We consider execution time of graph sampling algorithms as performance metric.
 
@@ -201,9 +201,9 @@ Model training consists of constructing feature vectors for each sampling metric
 ### Hyper-parameter tuning
 We performed five-fold cross validation using GreadSearchCV with following search space for different hyper-parameters of ML models, which results in the following hyper-parameters for each ML model.
 
-Model | Hyperparameter | Search Space | Tuned value 
+Model | Hyperparameter | Search Space | Tuned value (D3/C2D2/HPD2/HPDC)
 --- | ---  | --- | ---
-kNN | algorithm | 'auto', 'ball_tree', 'kd_tree', 'brute'
+kNN | algorithm | 'auto', 'ball_tree', 'kd_tree', 'brute' | 
 kNN | n_neighbors | 4, 5, 10, 15
 kNN | weights | 'uniform', 'distance'
 RF | bootstrap | True
