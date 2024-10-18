@@ -1,8 +1,8 @@
 # Graph Sampling Quality Prediction
 
-This repository includes the code and data for the **Graph Sampling Quality Prediction**, a machine learning (ML) based method for predicting quality and performance of different graph sampling algorithms of three categories (node-based, edge-based and traversal).
+This repository includes the code and data for the **Graph Sampling Quality Prediction**, a machine learning (ML) based method for predicting the quality and performance of different graph sampling algorithms of three categories (node-based, edge-based, and traversal).
 
-This tutorial includes instructions for graph data preparation, processing, sampling, model training and evaluation, providing model reproducibility. It consists of following sections:
+This tutorial includes instructions for graph data preparation, processing, sampling, model training, and evaluation, providing model reproducibility. It consists of the following sections:
 1. Model description
 2. Data generation
 3. Graph feature extraction
@@ -27,22 +27,22 @@ Our model predicts and recommends graph sampling algorithms of three categories,
    * Induced random edge
 * Traversal sampling
    * Random jump
-   * Metropolis Hastings random walk
+   * Metropolis-Hastings random walk
    * SnowBall
    * Forest Fire
    * Frontier
    * Rank degree
    * Expansion
 ###  Sampling quality metrics
-We consider three quality metrics (distribution divergences) for evaluating sampling algorithms: degree distribution (D3), clustering coefficient distribution (C2D2), hop-plots distribution (HPD2) and hop-plots distribution for the largest connected component (HPDC) divergence.
+We consider three quality metrics (distribution divergences) for evaluating sampling algorithms: degree distribution (D3), clustering coefficient distribution (C2D2), hop-plots distribution (HPD2), and hop-plots distribution for the largest connected component (HPDC) divergence.
 ### Sampling performance metric
-We consider execution time of graph sampling algorithms as performance metric.
+We consider the execution time of graph sampling algorithms as the performance metric.
 
 ### ML models
-Our tool consist of three ML models:
+Our tool consists of three ML models:
 * Random forest (RF)
-* k nearest neighbour (kNN)
-* Multi layer perceptron (MLP)
+* k nearest neighbor (kNN)
+* Multi-layer perceptron (MLP)
 
 ## Data generation
 
@@ -61,7 +61,7 @@ $$m = \lfloor(N * D / 2)\rfloor$$
 	
 **Watts-Strogatz**
 Watts-Strogatz graphs include 119 graphs with 10,000 ~ 100,000 nodes and densities in [0.00001, 0.001], generated with **Networkx**.
-The following equation gives the number of neighbours of each node (|Nei|) in the ring toplogy, given N and D:
+The following equation gives the number of neighbors of each node (|Nei|) in the ring topology, given N and D:
 
 $$|Nei| = \lfloor(D * (N - 1))\rfloor$$
 
@@ -103,7 +103,7 @@ PowerLawCluster graphs of **Networkx** include 60 graphs with adjusted parameter
 45,000 | 20 | 1
 
 **Forest-Fire**
-The evolution based Forest-Fire graphs consists of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward probabilites to produce densities in [0.00004, 0.001]. We used [Snap-stanford](https://snap.stanford.edu/snappy/doc/reference/GenForestFire.html) library for their generation.
+The evolution-based Forest-Fire graphs consist of 36 graphs with 10,000 ~ 100,000 nodes and adjusted forward/backward probabilities to produce densities in [0.00004, 0.001]. We used [Snap-stanford](https://snap.stanford.edu/snappy/doc/reference/GenForestFire.html) library for their generation.
 
 #Nodes | forward/backward probability 
 --- | ---  
@@ -118,7 +118,7 @@ The evolution based Forest-Fire graphs consists of 36 graphs with 10,000 ~ 100,0
 50,000 | 0.01, 0.2, 0.3
 
 **Stochastic Block Model**
-The clustering based graphs of stochastic block model consists of 180 graphs with the following characteristics, generated with **Networkx** ($K$: number of clusters, $\alpha$: inter-intra cluster probability ratio):
+The clustering based graphs of the stochastic block model consist of 180 graphs with the following characteristics, generated with **Networkx** ($K$: number of clusters, $\alpha$: inter-intra cluster probability ratio):
 
 $$N$$: 5,000, 15,000, 25,000, 35,000, 45,000
 
@@ -147,6 +147,7 @@ We generated 29 testing graphs of three types Albert-Barabasi, Erdos-Renyi, and 
 
 
 #### Real graphs
+We also tested our models on 16 publicly available real-world graphs of co-authorship, citation, technology, collaboration, and social graphs.
 
 ### Data generation instructions
 To generate synthetic graphs inside folder "data preparation/graph generation" run the following command:
