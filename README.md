@@ -15,7 +15,8 @@ This tutorial includes instructions for graph data preparation, processing, samp
 9. Result analysis
 10. ML explainability
 
-## Sampling algorithms
+## Model description
+### Sampling algorithms
 Our model predicts and recommends graph sampling algorithms of three categories, based on quality and performance metrics. It considers twelve sampling algorithms listed below:
 * Node-based sampling
    * Random node
@@ -32,12 +33,12 @@ Our model predicts and recommends graph sampling algorithms of three categories,
    * Frontier
    * Rank degree
    * Expansion
-##  Sampling quality metrics
+###  Sampling quality metrics
 We consider three quality metrics for evaluating sampling algorithms: degree distribution, clustering coefficient distribution and hop-plots distribution divergence.
-## Sampling performance metric
+### Sampling performance metric
 We consider execution time of graph sampling algorithms as performance metric.
 
-## ML models
+### ML models
 Our tool consist of three ML models:
 * Random forest (RF)
 * k nearest neighbour (kNN)
