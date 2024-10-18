@@ -203,15 +203,15 @@ We performed five-fold cross validation using GreadSearchCV with following searc
 
 Model | Hyperparameter | Search Space | Tuned value (D3/C2D2/HPD2/HPDC)
 --- | ---  | --- | ---
-kNN | algorithm | 'auto', 'ball_tree', 'kd_tree', 'brute' | 
-kNN | n_neighbors | 4, 5, 10, 15
-kNN | weights | 'uniform', 'distance'
-RF | bootstrap | True
-RF | max_depth | None, 90, 100, 110
-RF | max_features | 2, 3
-RF | min_samples_leaf | 2, 3, 4, 5
-RF | min_samples_split | 8, 10, 12
-RF | n_estimators | 100, 200, 300, 400
+kNN | algorithm | 'auto', 'ball_tree', 'kd_tree', 'brute' | 'auto', 'ball_tree', 'ball_tree', 'ball_tree'
+kNN | n_neighbors | 4, 5, 10, 15 | 4, 4, 15, 10
+kNN | weights | 'uniform', 'distance' | 'distance', 'distance', 'distance', 'distance'
+RF | bootstrap | True | True
+RF | max_depth | None, 90, 100, 110 | None, None, None, None
+RF | max_features | 2, 3 | 3, 3, 3, 3
+RF | min_samples_leaf | 2, 3, 4, 5 | 2, 2, 2, 2
+RF | min_samples_split | 8, 10, 12 | 8, 8, 8, 8
+RF | n_estimators | 100, 200, 300, 400 | 
 MLP | activation | 'tanh', 'relu'
 MLP | hidden_layer_sizes | (30), (50), (100), (30,30), (50,50), (100,100)
 MLP | solver | 'sgd', 'adam'
