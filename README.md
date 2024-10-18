@@ -48,7 +48,7 @@ Our tool consist of three ML models:
 
 ### Dataset details
 
-#### Synthetic graphs - train
+#### Train synthetic graphs
 We generated five types of synthetic graphs, with the following settings.
 
 **Albert-Barabasi**
@@ -137,7 +137,7 @@ $$\rho' = \alpha * \rho$$
 $$N_c = \lfloor N/K\rfloor$$
  
 
-#### Synthetic graphs - test
+#### Test synthetic graphs
 We generated 29 graphs of three types Albert-Barabasi, Erdos-Renyi and Watts-Strogatz with 150,000-450,000 nodes and following parameters:
 
 * Albert-Barabasi with m of 1-22; 
