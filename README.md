@@ -52,7 +52,7 @@ Our tool consist of three ML models:
 We generated five types of synthetic graphs, with the following settings.
 
 **Albert-Barabasi**
-These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes, and densities in [0.00001, 0.001], generated with [Networkx](https://networkx.org/documentation/stable/reference/generated/networkx.generators.random_graphs.barabasi_albert_graph.html).
+These graphs consist of 64 graphs with 10,000 ~ 100,000 nodes, and densities in [0.00001, 0.001], generated with [Networkx](https://networkx.org/documentation/stable/reference/generated/networkx.generators.random_graphs.barabasi_albert_graph.html).
 We calculate the new edge numbers per node parameter (NewEdgesPerNode) as follows (N: node numbers, D: graph density, m: new edge numbers per node):
 
 $$m = \lfloor(N * D / 2)\rfloor$$
@@ -60,7 +60,7 @@ $$m = \lfloor(N * D / 2)\rfloor$$
 - m: 1~42
 	
 **Watts-Strogatz**
-Watts-Strogatz graphs include xxx graphs with 10,000 ~ 100,000 nodes and densities in [0.00001, 0.001], generated with **Networkx**.
+Watts-Strogatz graphs include 119 graphs with 10,000 ~ 100,000 nodes and densities in [0.00001, 0.001], generated with **Networkx**.
 The following equation gives the number of neighbours of each node (|Nei|) in the ring toplogy, given N and D:
 
 $$|Nei| = \lfloor(D * (N - 1))\rfloor$$
@@ -68,7 +68,7 @@ $$|Nei| = \lfloor(D * (N - 1))\rfloor$$
 - $$|Nei|$$: 2~98
   
 **Erdos-Renyi**
-These graphs consist of xxx graphs with 10,000 ~ 100,000 nodes and edge probabilities (densities) in [0.00001, 0.001], generated with **Networkx**.
+These graphs consist of 173 graphs with 10,000 ~ 100,000 nodes and edge probabilities (densities) in [0.00001, 0.001], generated with **Networkx**.
 
 **PowerLawCluster**
 PowerLawCluster graphs of **Networkx** include 60 graphs with adjusted parameters (new edge numbers per node m and TriangleProb) to produce densities in  [0.00001, 0.001] and average clustering coefficient (CC) in [0.1, 0.6] extracted from real graph properties. 
