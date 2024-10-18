@@ -214,11 +214,11 @@ RF | min_samples_split | 8, 10, 12 | 8, 8, 8, 8
 RF | n_estimators | 100, 200, 300, 400 | 100, 400, 400, 400
 MLP | activation | 'tanh', 'relu' | 'tanh', 'tanh', 'relu', 'relu'
 MLP | hidden_layer_sizes | (30), (50), (100), (30,30), (50,50), (100,100) | (100,100), (30,30), (100,100), (50,50)
-MLP | solver | 'sgd', 'adam' |
-MLP | alpha | 0.0001, 0.05
-MLP | learning_rate | 'constant', 'adaptive'
-MLP | shuffle | True
-MLP | early_stopping | True
+MLP | solver | 'sgd', 'adam' | 'adam'
+MLP | alpha | 0.0001, 0.05 |  0.0001
+MLP | learning_rate | 'constant', 'adaptive' | 'constant'
+MLP | shuffle | True | True
+MLP | early_stopping | True | True
 
 To run the model training and hyper-parameter tuning use *train_models/train_models.ipynb*.
 
