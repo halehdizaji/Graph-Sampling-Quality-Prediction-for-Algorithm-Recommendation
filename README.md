@@ -125,6 +125,7 @@ $$N$$: 5,000, 15,000, 25,000, 35,000, 45,000
 $$D$$: 0.0001, 0.0005, 0.0009
 
 $$K$$: 10, 15, 20, 25
+
 $$\alpha$$: 0.01, 0.001, 0.1
 
 We calculated parameters of these graphs (cluster size $$N_c$$, inter cluster density $$\rho'$$ and intra cluster density $$\rho$$) according to the following equations :
